@@ -1,2 +1,2 @@
 # LearningGo
-Learning the Go language
+Learning the Go language from the basics
