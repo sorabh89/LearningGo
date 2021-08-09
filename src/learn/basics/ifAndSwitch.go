@@ -47,12 +47,13 @@ func main() {
 	}
 
 	//As Go implicitly supports break, In case if we want to fallthrough to the next case we can use 'fallthrough' command
+	//Note if we use fallthrought, nomatter the next condition passes or not the block will be executed
 
 	switch {								//output : Less than or equal to 10
-		case k <= 10 : 							//	   Less than or equal to 20
+		case k <= 10 : 							//	   Less than or equal to 20		printing it even when k is not <= 5
 				fmt.Println("Less than or equal to 10")
 				fallthrough
-		case k <= 20 :
+		case k <= 5 :
 				fmt.Println("Less than or equal to 20")
 		default :
 				fmt.Println("Greater than 20")
